@@ -1,0 +1,9 @@
+.info {
+    text-align: left;
+    margin: auto;
+    width: 630px;
+    clear: both;
+    overflow: hidden;
+    margin-bottom: 30px;
+    padding: 15px 20px 5px;
+}

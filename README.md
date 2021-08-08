@@ -1,70 +1,67 @@
-# Getting Started with Create React App
+# Jazz Team
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Описание задачи: 
+Реализовать приложение, которое будет отображать несколько страниц, в зависимости от url браузера. Серверную часть программировать не нужно. Оформление и дизайн на ваше усмотрение, проявите творчество, сделайте так, чтобы можно было комфортно смотреть на приложение в браузере.
+	
+Необходимо решить задание, используя следующий стек технологий:
+1. JavaScript
+2. Web-фреймворк на выбор:
+3. React/Redux
+4. Angular/NgRx
+5. CSS - не использовать сторонних CSS-библиотек или препроцессоров
 
-## Available Scripts
+Описание страниц:
+1. / - главная страница.
+2. /login - Авторизация - страница авторизации.
+3. /profile - Профиль - страница, которая отображает любую информацию об авторизованном пользователе. Должна быть закрыта без авторизации.
+4. /info - Информация - страница с любой однородной информацией. 
 
-In the project directory, you can run:
+Реализовать боковую или верхнюю панель навигации, которая будет отображаться на всех страницах приложения и содержать ссылки на главную страницу, на страницу с информацией (/info) и на страницу пользователя (/profile).
 
-### `yarn start`
+Реализовать переход на страницу Авторизация при попытке войти в Профиль, если пользователь не авторизован.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Реализовать отображение имени авторизованного пользователя на панели навигации.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Для авторизации пользователя использовать фейковые данные username: Admin, password: 12345678.
 
-### `yarn test`
+При вводе правильных данных необходимо реализовать переход на страницу профиля пользователя.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+При попытке ввести некорректные данные отображать сообщение "Имя пользователя или пароль введены неверно".
 
-### `yarn build`
+Реализовать в приложении хотя бы один из двух описанных ниже дополнительных разделов на выбор: Календарь или Таблицу с данными. 
+## Календарь
+Реализовать страницу календаря (/calendar) в соответствии с макетом:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Страница должна быть закрыта без авторизации.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Реализовать Добавление/Редактирование событий пользователя в календарь.
 
-### `yarn eject`
+Реализовать переход по месяцам.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Реализовать поиск событий в календаре.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+На странице Профиль отобразить созданные события пользователя.
+## Таблица с данными
+Реализовать в приложении страницу, на которой будет отображена таблица с данными. Путь url, по которому страница будет доступна в приложении, на ваше усмотрение.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Страница должна быть закрыта без авторизации.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Исходные данные для таблицы реализовать в json формате и поместить в отдельный json файл. Какие именно данные на ваше усмотрение, проявите фантазию.
 
-## Learn More
+Количество колонок и строк должно быть таким, чтобы в таблице отображались горизонтальная и вертикальная полосы прокрутки.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Заголовки колонок таблицы должны быть зафиксированными, чтобы при вертикальном скролле они всегда отображалась на экране.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Первая колонка должна быть зафиксирована, чтобы при горизонтальном скролле она всегда отображалась на экране.
 
-### Code Splitting
+Реализовать выделение строк таблицы. Выделите любым цветом, на ваше усмотрение рамки, строки.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Реализовать панель состояния вверху или внизу таблицы, на которой должно быть отображено общее количество данных и количество выделенных строк в таблице.
 
-### Analyzing the Bundle Size
+Реализовать редактирование ячеек таблицы.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Дополнительные условия
+Код приложения поместить в GitHub репозиторий с описанием. 
+Каждую отдельную задачу тестового задания оформить отдельным коммитом.
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
