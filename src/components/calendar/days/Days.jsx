@@ -7,11 +7,10 @@ const Days = ({ week, id_week, onSelectDate, events, selectDate }) => {
 
     const onCurrentDate = (each) => {
 
-        let day = new Date().getDate().length === 1 ? new Date().getDate() : '0' + new Date().getDate();
+        let day = new Date().getDate().length !== 1 ? new Date().getDate() : '0' + new Date().getDate();
         let month = new Date().getMonth().length === 1 ? new Date().getMonth() + 1 : '0' + (new Date().getMonth() + 1);
 
         let today = `${day}.${month}.${new Date().getFullYear()}, 00:00:00`;
-
         return each.jsDate === today;
     }
 

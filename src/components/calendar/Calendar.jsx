@@ -69,11 +69,10 @@ const Calendar = ({ events, addEvent, updEvent }) => {
         // установка текущей даты
         const onCurrentDate = (each) => {
 
-            let day = new Date().getDate().length === 1 ? new Date().getDate() : '0' + new Date().getDate();
+            let day = new Date().getDate().length !== 1 ? new Date().getDate() : '0' + new Date().getDate();
             let month = new Date().getMonth().length === 1 ? new Date().getMonth() + 1 : '0' + (new Date().getMonth() + 1);
 
             let today = `${day}.${month}.${new Date().getFullYear()}, 00:00:00`;
-
             return each.jsDate === today;
         }
 
@@ -84,9 +83,7 @@ const Calendar = ({ events, addEvent, updEvent }) => {
             each = tmp.length === 1 ? tmp : each;
         })
         const dateTimeEvents = events.map(e => e.dateTime)
-
         each = each[0]
-
         if (dateTimeEvents.includes(...each.jsDate)) {
             return events.filter(e => e.dateTime === each.jsDate).map((fe) => {
                 return onSelectDate(fe)
