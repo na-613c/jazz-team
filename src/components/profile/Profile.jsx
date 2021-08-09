@@ -6,7 +6,7 @@ const imgUrl = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY5ZtMI-JU
 const Profile = ({ username, events }) => {
 
     let userEvents = events.map((e) => (
-        <div>
+        <div key={e.uId}>
             <p>Время: {e.dateTime}</p>
             <p>Тема: {e.title}</p>
             <p>Имя: {e.name}</p>

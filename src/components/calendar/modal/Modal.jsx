@@ -6,13 +6,18 @@ const Modal = ({ selectDate, addEvent, updEvent, cancel, type }) => {
     const nameEl = useRef(null);
 
     const onClick = () => {
-        if (type === 'Добавить') {
-            addEvent(selectDate.dateTime, titleEl.current.value, nameEl.current.value)
-        } else {
-            updEvent(selectDate.dateTime, titleEl.current.value, nameEl.current.value, selectDate.uId)
+        if (!condition) {
+            if (type === 'Добавить') {
+                addEvent(selectDate.dateTime, titleEl.current.value, nameEl.current.value)
+            } else {
+                updEvent(selectDate.dateTime, titleEl.current.value, nameEl.current.value, selectDate.uId)
+            }
+            cancel()
         }
-        cancel()
     }
+    console.log(selectDate?.dateTime === undefined)
+
+    let condition = (type === 'Добавить' && selectDate?.uId !== undefined) || (type !== 'Добавить' && selectDate?.uId === undefined) || (selectDate?.dateTime === undefined)
 
     let editDate = selectDate?.dateTime.slice(0, 10) || 'Выберите дату';
 
@@ -31,12 +36,13 @@ const Modal = ({ selectDate, addEvent, updEvent, cancel, type }) => {
                     <input ref={titleEl} type='text' placeholder='Название события' defaultValue={selectDate?.title} />
                     <input ref={nameEl} type='text' placeholder='Участники' defaultValue={selectDate?.name} />
                 </div>
-                <div
-                    className='btn-prime'
+                <input
+                    type="button"
+                    className={`${condition && 'disabled'} btn-prime`}
                     onClick={onClick}
-                >
-                    {type}
-                </div>
+                    disabled={condition}
+                    value={type}
+                />
             </div>
         </div>
     )

@@ -10,7 +10,7 @@ const emptyMsgStyle = {
 const Filter = ({ events }) => {
     const filterEl = useRef(null);
     const [isFocus, setIsFocus] = useState(false);
-    const [value, setValue] = useState();
+    const [value, setValue] = useState('');
 
     const eventsToString = events.map((e) => {
         return {

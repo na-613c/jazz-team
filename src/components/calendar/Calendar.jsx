@@ -126,6 +126,9 @@ const Calendar = ({ events, addEvent, updEvent }) => {
 
 
     const dateElements = dates.length > 0 && dates.map((week, id_week) => {
+
+
+
         return (
             <Days
                 key={{ id_week }}

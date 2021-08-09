@@ -151,3 +151,7 @@
 .calendar-filter p{
     margin: 10px;
 }
+
+.calendar-modal-container .disabled{
+    background: gray;
+}
