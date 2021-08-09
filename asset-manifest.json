@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/jazz-team/static/css/main.8883f264.chunk.css",
+    "main.js": "/jazz-team/static/js/main.d4867057.chunk.js",
+    "main.js.map": "/jazz-team/static/js/main.d4867057.chunk.js.map",
+    "runtime-main.js": "/jazz-team/static/js/runtime-main.4d3e60ae.js",
+    "runtime-main.js.map": "/jazz-team/static/js/runtime-main.4d3e60ae.js.map",
+    "static/js/2.61fba006.chunk.js": "/jazz-team/static/js/2.61fba006.chunk.js",
+    "static/js/2.61fba006.chunk.js.map": "/jazz-team/static/js/2.61fba006.chunk.js.map",
+    "static/js/3.19fb9084.chunk.js": "/jazz-team/static/js/3.19fb9084.chunk.js",
+    "static/js/3.19fb9084.chunk.js.map": "/jazz-team/static/js/3.19fb9084.chunk.js.map",
+    "index.html": "/jazz-team/index.html",
+    "static/css/main.8883f264.chunk.css.map": "/jazz-team/static/css/main.8883f264.chunk.css.map",
+    "static/js/2.61fba006.chunk.js.LICENSE.txt": "/jazz-team/static/js/2.61fba006.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4d3e60ae.js",
+    "static/js/2.61fba006.chunk.js",
+    "static/css/main.8883f264.chunk.css",
+    "static/js/main.d4867057.chunk.js"
+  ]
+}
