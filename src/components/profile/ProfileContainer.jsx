@@ -4,6 +4,7 @@ import { connect } from "react-redux";
 const mapStateToProps = (state) => {
     return {
         username: state.auth.username,
+        events: state.calendar.events,
     }
 };
 

@@ -1,0 +1,153 @@
+.calendar-table {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.calendar-day-today {
+    background-color: rgb(190, 190, 190);
+    color: black;
+    font-weight: bold;
+}
+
+.calendar-container {
+    width: 1000px;
+}
+
+.calendar-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 25px;
+}
+
+.calendar-title-child {
+    margin: 0 5px;
+}
+
+.calendar table {
+    border-collapse: collapse;
+    table-layout: fixed;
+    height: 100%;
+}
+
+
+.calendar-day {
+    font-size: 15px;
+    border: 1px solid rgb(207, 207, 207);
+    padding: 5px;
+    width: 50px;
+    text-align: left;
+    overflow: hidden;
+    vertical-align: top;
+}
+
+.calendar-day-active {
+    border: thick double #32a1ce;
+    box-sizing: border-box;
+}
+
+.calendar-week {
+    height: 100px;
+}
+
+.calendar-today {
+    cursor: pointer;
+    font-size: 11px;
+    border: 1px solid rgb(0, 0, 0);
+    padding: 0px 10px;
+    border-radius: 2px;
+}
+
+.calenar-event {
+    color: black;
+    background-color: rgb(109, 189, 255);
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100px;
+    background-color: rgb(238, 238, 238);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.btn-prime {
+    border-radius: 5px;
+    margin: 10px;
+    display: inline-block;
+    width: 100px;
+    background-color: #0087ff;
+    color: white;
+    cursor: pointer;
+}
+
+.calendar-header .calendar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.calendar-search {
+    display: flex;
+    align-items: center;
+}
+
+.calendar-search input {
+    width: 210px;
+}
+
+.calendar-modal {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 200px;
+    background-color: rgb(238, 238, 238);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    padding: 10px;
+
+}
+
+.calendar-modal-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.calendar-modal input {
+    width: 100%;
+}
+
+.calendar-modal .btn-prime {
+    margin: 0;
+}
+
+.calendar-modal input,
+.calendar-modal .btn-prime {
+    margin-top: 10px;
+}
+
+.calendar-modal-container:last-child {
+    bottom: 0;
+}
+
+.calendar-filter {
+    width: 210px;
+    height: 150px;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 10px 10px 10px -1px rgba(0, 0, 0, 0.4),
+        -10px 10px 10px -1px rgba(0, 0, 0, 0.4);
+    text-align: left;
+    overflow: auto;
+}
+
+.calendar-filter p{
+    margin: 10px;
+}

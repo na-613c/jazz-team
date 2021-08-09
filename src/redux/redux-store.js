@@ -1,9 +1,12 @@
 import { applyMiddleware, combineReducers, compose, createStore } from "redux";
 import thunkMiddleware from 'redux-thunk';
 import authReducer from "./auth-reducer";
+import calendarReducer from "./calendar-reducer";
+
 
 let reducers = combineReducers({
     auth: authReducer,
+    calendar: calendarReducer,
 });
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
