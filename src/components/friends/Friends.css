@@ -1,0 +1,46 @@
+.friends {
+    display: flex;
+    justify-content: center;
+}
+
+.friends-container {
+    width: 1000px;
+}
+
+.friends-table-body,
+.friends-table-header {
+    overflow: auto scroll;
+    max-height: 400px;
+}
+
+.friends-td-sticky {
+    position: sticky;
+    left: 0px;
+    background: white;
+    box-shadow: 10px 0 5px rgba(0, 0, 0, .2);
+    z-index: 10;
+}
+
+.friends-table-header {
+    position: fixed;
+    width: 100%;
+}
+
+.friends td {
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.friends table {
+    border-collapse: collapse;
+    border: 1px solid rgb(0, 0, 0);
+
+}
+
+.friends-active{
+    background: deepskyblue;
+}
+
+.friends td input{
+    width: 100%;
+    padding: 10px;
+}
